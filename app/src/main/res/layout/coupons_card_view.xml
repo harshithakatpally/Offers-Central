@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vamsi.firebaseauth1.MainActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/couponCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:id = "@+id/thumbnail"
+                android:layout_alignParentLeft="true"
+                android:src = "@drawable/album1"
+                android:layout_height="50dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/thumbnail"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/firstLine"
+                android:background="#c0c0c0"></View>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/thumbnail">
+                <TextView
+                    android:id = "@+id/couponDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20dp"
+                    android:text="Hello World!"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="5dp"/>
+
+                <View
+                    android:layout_width="75dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/couponDescription"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/secondLine"
+                    android:background="#c0c0c0"></View>
+
+                <TextView
+                    android:id="@+id/couponExpiry"
+                    android:text = "5 Coupons"
+                    android:layout_below="@+id/secondLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="5dp"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignRight="@+id/couponExpiry"
+                    android:layout_below="@+id/couponDescription"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/ic_dots"
+
+                    android:contentDescription="Popup Menu"
+                    android:id="@+id/dots"
+                    android:paddingRight="10dp"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

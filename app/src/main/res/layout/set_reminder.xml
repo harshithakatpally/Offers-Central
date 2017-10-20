@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/mainHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Reminder"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="30dp"
+        android:textColor="#000000"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="15dp"
+            android:gravity="right"
+            android:textColor="#000000" />
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/status"/>
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:hint="Give a short description"
+        android:visibility="invisible"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <TextView
+        android:id="@+id/daysHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select the day to be reminded before
+expiry of coupon"
+        android:inputType="textMultiLine"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#c0c0c0"
+        android:id="@+id/firstLine1"/>
+
+    <LinearLayout
+        android:id="@+id/daysLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_calander"
+            android:layout_marginLeft="15dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 day"
+            android:id="@+id/day1"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="9dp"
+            android:background="#ffffff"
+            android:onClick="onCheckboxClicked" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 days"
+            android:layout_weight="0.5"
+            android:layout_toRightOf="@+id/day1"
+            android:layout_marginTop="9dp"
+            android:id="@+id/day2"
+            android:onClick="onCheckboxClicked"
+            android:background="#ffffff"/>
+
+       <CheckBox
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/day2"
+           android:text="3 days"
+           android:layout_marginTop="9dp"
+           android:id="@+id/day3"
+           android:layout_weight="0.5"
+           android:onClick="onCheckboxClicked"
+           android:background="#ffffff"
+           android:layout_marginRight="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/timeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_timer"
+            android:layout_marginLeft="15dp"/>
+
+        <EditText
+            android:id="@+id/timeEditText"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:hint="00:00" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/saveButton"
+        android:text="Save"/>
+
+</LinearLayout>

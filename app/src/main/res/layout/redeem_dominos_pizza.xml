@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pizza"
+        android:textSize="22dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#c0c0c0"
+        android:id="@+id/Line1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Veg"
+        android:id="@+id/vegtext"
+        android:textSize="18dp"
+        android:onClick="radioSelected"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/veglayout"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/vegtext">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/vegtype"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/vegsize">
+        </Spinner>
+    </LinearLayout>
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Non-Veg"
+        android:layout_below="@+id/veglayout"
+        android:id="@+id/nonvegtext"
+        android:layout_marginTop="10dp"
+        android:onClick="radioSelected"
+        android:textSize="18dp"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/nonvegtext"
+        android:id="@+id/nonveg"
+        android:layout_marginTop="10dp">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/nonvegtype">
+        </Spinner>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/nonvegsize">
+        </Spinner>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/nonveg"
+        android:background="#c0c0c0"
+        android:id="@+id/Line2"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/pizza">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Veg"
+            android:id="@+id/vegtext1"
+            android:textSize="18dp"
+            android:textColor="#000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/veglayout1"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/vegtext1">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:id="@+id/vegtype1"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:id="@+id/vegsize1">
+            </Spinner>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Non-Veg"
+            android:layout_below="@+id/veglayout1"
+            android:id="@+id/nonvegtext1"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:textColor="#000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/nonvegtext1"
+            android:id="@+id/nonveg1"
+            android:layout_marginTop="10dp">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:id="@+id/nonvegtype1">
+            </Spinner>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:id="@+id/nonvegsize1">
+            </Spinner>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/nonveg1"
+            android:background="#c0c0c0"
+            android:id="@+id/Line3"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+    <Button
+        android:text="More Pizza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/morepizza"
+        android:background="#002e63"
+        android:layout_marginRight="25dp"
+        android:textColor="#ffffff"
+        android:layout_weight="0.5"
+        android:onClick="onAddToWishListClick"/>
+
+    <Button
+        android:text="Done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#002e63"
+        android:layout_marginLeft="25dp"
+        android:textColor="#ffffff"
+        android:id="@+id/additems"
+        android:layout_weight="0.5"
+       />
+
+        </LinearLayout>
+</LinearLayout>

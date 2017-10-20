@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_wallet"
+
+            android:title="Your Wallet" />
+        <item
+            android:id="@+id/nav_home"
+
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_wishlist"
+
+            android:title="Your Wish List" />
+        <item
+            android:id="@+id/nav_profilesettings"
+
+            android:title="Profile Settings" />
+
+        <item
+            android:id="@+id/reminder"
+            android:title="Reminders"/>
+        <item
+            android:id="@+id/logOut"
+
+            android:title="Logout"
+            ></item>
+
+        <item
+            android:id="@+id/dummyLayout"
+            android:title="Delete Account"
+            android:visible="true">
+        </item>
+
+        <item
+            android:id="@+id/preferencesLayout"
+            android:title="Preferences Layout"
+            android:visible="false"></item>
+
+        <item android:id="@+id/verifyCredentials"
+            android:title="Verify Credentials"
+            android:visible="false">
+        </item>
+
+    </group>
+
+
+</menu>

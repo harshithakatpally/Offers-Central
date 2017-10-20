@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#c0c0c0"
+        android:id="@+id/firstLine2"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="number"
+        android:hint="Amount(Rs.)"
+        android:background="#ffffff"
+        android:id="@+id/amount"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Can't be left blank"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/warning1"
+
+        android:visibility="gone"
+        android:textColor="#ff0000"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#c0c0c0"
+        android:id="@+id/secondline2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Select an option to pay"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="20dp"
+        android:paddingTop="5dp"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/savedCard"
+        android:layout_height="270dp"
+        android:layout_marginTop="5dp"
+        android:visibility="visible">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#c0c0c0"
+        android:id="@+id/thirdline2"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Saved Details"
+            android:textSize="18dp"
+            android:paddingTop="4dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/thirdline2"
+            android:paddingLeft="15dp"
+            android:id="@+id/text4"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Remove"
+            android:id="@+id/removeSavedCard"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_alignTop="@+id/text4"
+            android:layout_toRightOf="@id/text4"
+            android:layout_marginLeft="150dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/text4"
+            android:id="@+id/cardNumber"
+            android:text="13553647656697087"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:paddingTop="5dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/cardNumber"
+            android:id="@+id/cvvtext"
+            android:text="CVV"
+            android:paddingLeft="45dp"
+            android:textColor="#000000"
+            android:textSize="22dp"
+            android:layout_marginTop="15dp"/>
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/cvvtext"
+            android:id="@+id/cvv"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:inputType="numberPassword"
+            android:textAlignment="center"
+            android:background="@drawable/edittext_border"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Pay Now"
+            android:layout_below="@+id/cvv"
+            android:id="@+id/pay1"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/textview_border"
+            android:textColor="#ffffff"
+            android:onClick="payOnclick"/>
+
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Other payment modes"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+            android:layout_below="@+id/pay1"
+        android:paddingLeft="15dp"
+        android:paddingTop="22dp"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#c0c0c0"
+        android:id="@+id/fourthline2"/>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/debitcard"
+        android:text="Debit Card"
+        android:layout_marginLeft="15dp"
+        android:background="@android:color/transparent"
+        android:textAlignment="viewStart"
+        android:paddingTop="5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#c0c0c0"
+        android:id="@+id/fisthline2"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/creditcard"
+        android:text="Credit Card"
+        android:layout_marginLeft="15dp"
+        android:textAlignment="viewStart"
+        android:paddingTop="5dp"
+        android:background="@android:color/transparent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#c0c0c0"
+        android:id="@+id/sixthline2"/>
+
+
+</LinearLayout>

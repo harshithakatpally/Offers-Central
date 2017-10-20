@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingTop="40dp"
+    android:paddingLeft="40dp"
+    android:background="#cd5c5c">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:background="#ffffff"
+        android:textSize="20dp"
+        android:paddingLeft="15dp"
+        android:ems="12"
+        android:id="@+id/name"
+        android:hint="Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:inputType="number"
+        android:textSize="20dp"
+        android:paddingLeft="15dp"
+        android:ems="12"
+        android:id="@+id/mobile"
+        android:hint="Mobile Number" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textEmailAddress"
+        android:background="#ffffff"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:textSize="20dp"
+        android:ems="12"
+        android:id="@+id/email"
+        android:hint="Email" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:background="#ffffff"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:textSize="20dp"
+        android:ems="12"
+        android:id="@+id/password"
+        android:hint="Password" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/show_password1"
+            android:id="@+id/viewPassword"
+            android:layout_gravity="bottom|right"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:paddingLeft="15dp"
+        android:textSize="20dp"
+        android:ems="12"
+        android:id="@+id/confirmPassword"
+        android:hint="Confirm Password" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src = "@drawable/show_password1"
+            android:layout_gravity="bottom|right"
+            android:id="@+id/viewConfirmPassword" />
+    </FrameLayout>
+
+    <Button
+        android:text="Register"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="#002e63"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:id="@+id/register" />
+</LinearLayout>

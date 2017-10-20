@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">Firebase Auth 1</string>
+    <string name="action_add_favourite">Add to Favourites</string>
+    <string name="action_play_next">Play Next</string>
+    <string name="backdrop_title">LOVE MUSIC</string>
+    <string name="backdrop_subtitle">This season top 20 albums</string>
+    <string name="spinner_title">Choose</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="Months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="Years">
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+        <item>2031</item>
+        <item>2032</item>
+    </string-array>
+
+    <string-array name="VegType">
+        <item>Item</item>
+    <item>Paneer and Onion</item>
+    <item>Cheese and Corn</item>
+    <item>Fresh Veggie</item>
+    </string-array>
+
+    <string-array name="NonvegType">
+        <item>Item</item>
+    <item>Barbeque Chicken</item>
+    <item>Pepper Chicken</item>
+    <item>Hot N Spicy Chicken</item>
+    <item>Cheese and Pepperoni</item>
+    </string-array>
+
+    <string-array name="breads">
+        <item>None</item>
+        <item>Garlic breadsticks</item>
+        <item>Stuffed Garlic breadsticks</item>
+        <item>Chicken parcel</item>
+        <item>Veg parcel</item>
+    </string-array>
+
+    <string-array name="dips">
+        <item>None</item>
+        <item>Cheesy Jalapeno dip</item>
+        <item>Cheesy dip</item>
+    </string-array>
+
+    <string-array name="beverages">
+        <item>None</item>
+        <item>Fanta mobile</item>
+        <item>Coke mobile</item>
+        <item>Sprite mobile</item>
+    </string-array>
+
+    <string-array name="more">
+        <item>None</item>
+        <item>Lava cake</item>
+        <item>Butterscotch Mouse cake</item>
+        <item>Choco pizza</item>
+    </string-array>
+
+    <string-array name="Size">
+        <item>Size</item>
+        <item>Regular</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+    <string-array name="Food">
+        <item>None</item>
+        <item>Domino\'s</item>
+        <item>KFC</item>
+        <item>Pizza Hut</item>
+        <item>Subway</item>
+    </string-array>
+
+    <string-array name="Shopping">
+        <item>None</item>
+        <item>Nike</item>
+        <item>Allensolly</item>
+        <item>Vanheusen</item>
+        <item>Pepejeans</item>
+        <item>Levis</item>
+    </string-array>
+
+    <string-array name="Movies">
+        <item>None</item>
+        <item>BookMyShow</item>
+        <item>Inox</item>
+        <item>Tixdo</item>
+        <item>PvrCinemas</item>
+        <item>Cinepolis</item>
+    </string-array>
+
+</resources>
+

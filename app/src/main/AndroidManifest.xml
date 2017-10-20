@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vamsi.firebaseauth1">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Offers Central"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".userList"/>
+        <activity android:name=".RegisterUser"/>
+        <activity android:name=".ForgotPassword"/>
+        <activity android:name=".ChangePassword"/>
+        <activity android:name=".CouponsScreen"/>
+        <activity android:name=".CouponLayoutSingle"/>
+        <activity android:name=".PersonalSettings"/>
+        <activity android:name=".WishList"/>
+        <activity android:name=".WalletBankScreen"/>
+        <activity android:name=".WalletHomeScreen"/>
+        <activity android:name=".WalletSelectMode"/>
+        <activity android:name=".WalletAddFromCard"/>
+        <activity android:name=".SetReminder"/>
+        <activity android:name=".RedeemCoupon"/>
+        <activity android:name=".RedeemDominosDips"/>
+        <activity android:name=".RedeemDominosPizza"/>
+        <activity android:name=".RedeemDominosBreads"/>
+        <activity android:name=".RedeemDominosBeverages"/>
+        <activity android:name=".RedeemDominosMore"/>
+        <activity android:name=".PreferencesScreen"/>
+        <activity android:name=".RedeemCheckout"/>
+        <activity android:name=".VerifyCredentials"></activity>
+        <activity android:name=".VerifyOtp"></activity>
+        <activity android:name=".DummyClass"></activity>
+        <activity android:name=".ResetPassword"></activity>
+        <activity
+            android:name=".HomeScreen"
+            android:theme="@style/CouponsStyle">
+        </activity>
+
+        <receiver android:name=".SmsBroadcastReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"></action>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".AlarmBroadcastReceiver">
+
+        </receiver>
+
+
+
+        <meta-data
+
+            android:name="io.fabric.ApiKey"
+            android:value="771586e10b1760e82ade9293523b430b89d4cfad" />
+
+        <meta-data
+
+            android:name="io.crashlytics.ApiKey"
+            android:value="771586e10b1760e82ade9293523b430b89d4cfad" /><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>

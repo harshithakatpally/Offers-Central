@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:background="#cd5c5c"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.vamsi.firebaseauth1.MainActivity">
+<RelativeLayout
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cd5c5c"
+    android:padding="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout1"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/thumbnail"
+            android:padding="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:src = "@drawable/album1" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/thumbnail">
+            <TextView
+                android:id = "@+id/couponDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:text="Hello World!"
+                />
+            <TextView
+                android:id="@+id/couponExpiry"
+                android:text = "5"
+                android:layout_below="@+id/couponDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/ic_dots"
+
+                android:id="@+id/dots" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="10dp"
+        android:id="@+id/recyclerView" />
+
+
+</RelativeLayout>
+</ScrollView>

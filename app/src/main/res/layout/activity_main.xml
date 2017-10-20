@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:background="#cd5c5c"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingTop="100dp"
+    android:paddingLeft="40dp"
+    tools:context="com.example.vamsi.firebaseauth1.MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:ems="12"
+        android:id="@+id/password"
+        android:background="#ffffff"
+        android:textSize="20dp"
+        android:paddingLeft="15dp"
+
+        android:layout_below="@+id/emailID"
+        android:layout_alignStart="@+id/emailID"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textEmailAddress"
+        android:ems="12"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        android:textSize="20dp"
+        android:paddingLeft="15dp"
+        android:background="#ffffff"
+        android:height="@dimen/activity_horizontal_margin"
+        android:cursorVisible="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/emailID" />
+
+    <TextView
+        android:text="Forgot password? "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:textSize="18dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+
+
+        android:layout_centerHorizontal="true"
+        android:id="@+id/forgotpass" />
+
+    <TextView
+        android:text="Click Here"
+        android:clickable="true"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/forgotpass"
+        android:layout_toEndOf="@+id/forgotpass"
+        android:layout_marginStart="19dp"
+        android:id="@+id/clickhere"
+        android:onClick="forgotpassword" />
+
+
+    <Button
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#002e63"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:id="@+id/login"
+        android:onClick="click"
+        android:layout_below="@+id/forgotpass"
+        android:layout_alignEnd="@+id/password" />
+
+    <Button
+        android:text="Register"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/register"
+        android:background="#002e63"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/textview"
+        android:layout_alignBottom="@+id/textview"
+        android:layout_toEndOf="@+id/textview"
+        android:layout_marginStart="7dp" />
+
+    <TextView
+        android:text="Not a user? "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingLeft="25dp"
+        android:id="@+id/textview"
+        android:gravity="center"
+        android:layout_below="@+id/login"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="64dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/reminder"
+
+            android:title="Set reminder" />
+
+        <item
+            android:id="@+id/off_reminder"
+            android:visible="false"
+            android:title="Off Reminder" />
+
+
+        <item
+            android:id="@+id/removeFromWishList"
+            android:visible="false"
+            android:title="Remove From Wishlist" />
+
+        <item
+            android:id="@+id/add_to_wishlist"
+
+            android:title="Add to Wishlist" />
+        <item
+            android:id="@+id/redeem_coupon"
+
+            android:title="Redeem Coupon" />
+
+
+        <item
+            android:id="@+id/never_show_again"
+
+            android:title="Never show again" />
+
+
+    </group>
+</menu>

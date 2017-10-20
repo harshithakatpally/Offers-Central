@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f4f4">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/album10"
+        android:id="@+id/couponImage"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+    <TextView
+        android:text="Terms and Conditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/termsConditions"
+        android:textSize="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/couponImage"
+        android:layout_alignStart="@+id/termsConditionsTextArea" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/termsConditions"
+        android:background="#c0c0c0"
+        android:id="@+id/firstLine"/>
+
+
+
+    <TextView
+        android:text="dsdhflkhd
+ajhlkjdslkfj
+        akdfkjsdfk
+        aksjdfkjdlsfkj
+        kajsdlkfjhaskdf
+        jasdjlfkhaldkf
+        ajsdlkjfhlaskdjf"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:inputType="textMultiLine"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:scrollbars="vertical"
+        android:id="@+id/termsConditionsTextArea"
+        android:layout_below="@id/firstLine"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignBottom="@+id/termsConditionsTextArea"
+        android:layout_above="@+id/addToWhislist"
+        android:background="#c0c0c0"
+        android:id="@+id/secondLine"/>
+
+
+    <Button
+        android:text="Add to WishList"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/addToWhislist"
+        android:background="#002e63"
+        android:textColor="#ffffff"
+
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="onAddToWishListClick"/>
+
+    <Button
+        android:text="Redeem Coupon"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout="@id/termsConditionsTextArea"
+        android:layout_marginRight="15dp"
+        android:background="#002e63"
+        android:textColor="#ffffff"
+        android:id="@+id/redeemCoupon"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignEnd="@+id/secondLine"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
+

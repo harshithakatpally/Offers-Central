@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total amount to be paid"
+        android:textSize="18dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#000000"
+        android:id="@+id/text5"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/text5"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:text="Rs. 200"
+        android:id="@+id/amount2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#000000"
+            android:text="Enter card details"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#c0c0c0"
+        android:id="@+id/firstLine4"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:text="Card No."/>
+
+    <EditText
+        android:id="@+id/cardNumber2"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:inputType="number"
+        android:background="@drawable/edittext_border"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="*Can't be left blank"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/warning2"
+        android:visibility="gone"
+        android:textColor="#ff0000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:text="Month"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="180dp"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:text="Year"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/spinnermonth" />
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@+id/spinnermonth"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/spinneryear" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:text="CVV"
+        android:id="@+id/cvvtext"/>
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/cvvtext"
+        android:id="@+id/cvv"
+        android:layout_marginLeft="15dp"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:inputType="numberPassword"
+        android:background="@drawable/edittext_border" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="*Can't be left blank"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/warning3"
+        android:visibility="gone"
+        android:textColor="#ff0000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <CheckBox
+        android:id="@+id/saveCardCheckbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:buttonTint="#cd5c5c"
+        android:layout_marginLeft="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="16dp"
+        android:text="Save this card for faster checkout"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Pay Now"
+        android:id="@+id/pay1"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/textview_border"
+        android:textColor="#ffffff"/>
+
+
+</LinearLayout>

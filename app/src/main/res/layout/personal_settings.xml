@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account Settings"
+        android:textSize="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#c0c0c0"
+        android:id="@+id/Line2"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:id="@+id/name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number"
+        android:id="@+id/mobileno"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:id="@+id/email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#c0c0c0"
+        android:id="@+id/secondLine1"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile notifications"
+        android:layout_weight="0.5"
+        android:textSize="20dp"
+        android:layout_marginLeft="15dp"/>
+
+    <Switch
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_weight="0.5"
+        android:id="@+id/notificationSwitch"
+        android:layout_marginRight="15dp"/>
+
+  </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#c0c0c0"
+        android:id="@+id/thirdLine1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply Changes"
+        android:background="#002e63"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:id="@+id/apply"
+        />
+</LinearLayout>

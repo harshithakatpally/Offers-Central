@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="Hi !!! "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:id="@+id/welcomeMessage" />
+
+    <TextView
+        android:text="Your Details :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginTop="23dp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/welcomeMessage"
+        android:layout_alignStart="@+id/welcomeMessage" />
+
+    <TextView
+        android:text="E-Mail : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/email"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:text="Mobile : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/email"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="26dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/mobile"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/email"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:text="Remove A/c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:id="@+id/removeAc"
+        android:layout_alignBaseline="@+id/logOff"
+        android:layout_alignBottom="@+id/logOff"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <Button
+        android:text="Log Out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/logOff"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/removeAc"
+        android:layout_marginEnd="12dp" />
+
+</RelativeLayout>

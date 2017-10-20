@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cd5c5c">
+
+
+    <android.support.v7.widget.Toolbar
+        app:titleTextColor="#ffffff"
+        app:titleMarginBottom="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/couponsToolbar" />
+
+    <android.support.design.widget.TabLayout
+        app:tabTextColor="#ff0066"
+        app:tabSelectedTextColor="#ffffff"
+        android:id="@+id/couponsTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/couponsPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

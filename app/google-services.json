@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1068933495631",
+    "firebase_url": "https://offers-central.firebaseio.com",
+    "project_id": "offers-central",
+    "storage_bucket": "offers-central.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068933495631:android:45296e72e3477ca4",
+        "android_client_info": {
+          "package_name": "com.example.vamsi.firebaseauth1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068933495631-hl1c8sfasro2gqhmv8oc9a1ult3brl0d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvngYDLVLZPdTO1Lu4RXhYDOKD9z1Zd5Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
